@@ -17,8 +17,8 @@ body {
 }
 /* header */
 .logo {
-    font-family: 'Raleway'
     text-decoration: none;
+    font-family: 'Raleway'
     color: var(--main-text-color);
     font-family: 'Roboto';
     font-weight: 700;
