@@ -84,8 +84,13 @@ body {
 }
 /* претмущества */
 .benefits h2 {
-    
-   
+
+
+}
+
+.hidden-title {
+    display: none;
+
 }
 .title-benefits {
     font-weight: 700;
@@ -98,7 +103,7 @@ body {
     font-size: 14px;
     line-height: 1.714;
 }
-.examples .title {
+.section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.166;
