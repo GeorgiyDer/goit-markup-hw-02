@@ -3,18 +3,26 @@
     --main-text-color:#212121;
     --secondary-text-color: #757575;
     --white-color: #FFFFFF;
-}
-ul {
-    list-style: none;
+    --main-font: 'Roboto';
 }
 
 body {
-    color: #212121;
-    background-color: #ffffff;
-    font-family: 'Roboto';
-
-
+    color: var(--main-text-color);
+    background-color: var(--white-color);
+    font-family: var(--main-font);
+    letter-spacing: 0.03em;
+    font-size: 14px;
 }
+
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+
+
 /* header */
 .logo {
     font-family: 'Raleway';
@@ -72,7 +80,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
 }
 /* претмущества */
 .benefits h2 {
@@ -129,6 +137,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 2;
+    font-family: 'Roboto';
 }
 .footer-contacts .link {
     color: rgba(255, 255, 255, 0.6);
