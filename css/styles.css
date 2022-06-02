@@ -19,19 +19,20 @@ body {
 }
 .link {
     text-decoration: none;
+    color: var(--main-text-color)
 }
-
+.current:visited {
+    color: var(--brand-color);
+}
 
 
 /* header */
 .logo {
     font-family: 'Raleway';
     color: var(--main-text-color);
-    font-family: 'Roboto';
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
-    text-decoration: none;
+   
     
 }
 .acent  {
@@ -43,10 +44,9 @@ body {
     font-size: 14px;
     line-height: 1.143;
 }
-.site-nav .link  {
-    color: var(--main-text-color);
 
-}
+
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--brand-color);
@@ -56,9 +56,8 @@ body {
     font-size: 14px;
     line-height: 1.143;
 }
-.contacts-nav .link {
-    color: var(--secondary-text-color);
-}
+
+
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
     color: var(--brand-color);
@@ -88,23 +87,28 @@ body {
 
 }
 
-.hidden-title {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .title-benefits {
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
 }
 .description-benefits {
     color: var(--secondary-text-color);
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.714;
 }
 .section-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.166;
 }
@@ -126,7 +130,6 @@ body {
 }
 .profession {
     color: var(--secondary-text-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.187;
 }
@@ -137,24 +140,28 @@ body {
 .footer-acent {
     color: #ffffff;
 }
-.footer-info .location {
+.footer-info .location.link {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 14px;
     line-height: 2;
     font-family: 'Roboto';
 }
+.footer-contacts {
+    font-style: normal;
+}
 .footer-contacts .link {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
-    line-height: 2px
+    line-height: 2px;
+    
+
 }
-.footer-contacts .location:hover, .footer-contacts .location:focus {
-    color: var(--brand-color);
-}
-.footer-contacts .link:hover,
-.footer-contacts .link:focus {
+
+
+.footer-contacts .link.hover-footer:hover,
+.footer-contacts .link.hover-footer:focus {
     color: var(--brand-color);}
 
 
@@ -177,7 +184,6 @@ body {
     color: var(--white-color);
 }
 .portfolio .title {
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
@@ -189,6 +195,11 @@ body {
     line-height: 1.875;
 }
 
+.btn.active:active {
+    background-color: var(--brand-color);
+    color: var(--white-color);
+
+}
 
 
 
