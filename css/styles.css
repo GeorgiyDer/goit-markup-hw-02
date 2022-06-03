@@ -21,7 +21,6 @@ body {
     text-decoration: none;
     color: var(--main-text-color)
 }
-.current:visited {
     color: var(--brand-color);
 }
 
