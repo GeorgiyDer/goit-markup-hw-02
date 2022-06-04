@@ -195,7 +195,7 @@ body {
     line-height: 1.875;
 }
 
-.btn .active {
+.btn.active {
     background-color: var(--brand-color);
     color: var(--white-color);
 
